@@ -39,7 +39,6 @@ class Search extends Component {
           onChange={this.onTextChange}
         />
         </div>
-        <br />
         {this.state.images.length > 0 ? (
           <ImageResults images={this.state.images} />
         ) : null}
