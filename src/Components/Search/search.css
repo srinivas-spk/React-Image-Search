@@ -1,14 +1,31 @@
+.inputField {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 input {
+  position: relative;
+  width: 300px;
   background-color: black;
   color: white;
-  margin-left: 420px;
-  margin-top: 100px;
-  padding-top: 20px;
-  padding-left: 120px;
+  text-align: center;
   font-size: 30px;
   border-top: hidden;
   border-right: hidden;
   border-left: hidden;
   outline: none;
-  border-bottom-style: groove;
+  border-bottom: 2px groove #fff;
 }
+
+input:focus {
+  border-bottom: 2px groove #f44336;
+}
+
+@media screen and (max-width: 768px) {
+  input {
+    width: 200px;
+  }
+}
+
