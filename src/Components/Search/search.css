@@ -11,6 +11,7 @@ input {
   background-color: black;
   color: white;
   text-align: center;
+  text-transform: capitalize;
   font-size: 30px;
   border-top: hidden;
   border-right: hidden;
@@ -26,6 +27,8 @@ input:focus {
 @media screen and (max-width: 768px) {
   input {
     width: 200px;
+    font-size: 18px;
+    text-transform: capitalize;
   }
 }
 
