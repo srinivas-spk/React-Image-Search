@@ -30,6 +30,7 @@ class Search extends Component {
     console.log(this.state.images);
     return (
       <div>
+       <div className="inputField">
         <input
           type="text"
           placeholder="Search for images"
@@ -37,6 +38,7 @@ class Search extends Component {
           value={this.state.searchText}
           onChange={this.onTextChange}
         />
+        </div>
         <br />
         {this.state.images.length > 0 ? (
           <ImageResults images={this.state.images} />
